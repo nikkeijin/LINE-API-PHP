@@ -80,9 +80,6 @@ foreach ($events as $event) {
         $bot->replyMessage($event->getReplyToken(), $multiMessageBuilder);
     }
 
-    //Debug for WordPress
-    error_log(print_r($multiMessageBuilder->buildMessage(), true));
-
 }
 
 http_response_code(200);
