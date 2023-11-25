@@ -1,6 +1,6 @@
 # LINE Messaging API SDK for PHP
 
-The LINE Messaging API SDK for PHP makes it easy to develop bots using LINE Messaging API
+The LINE Messaging API SDK to develop bots using LINE Messaging API.
 
 ## Installation
 
