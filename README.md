@@ -63,18 +63,18 @@ foreach ($events as $event) {
     $displayName = $profile['displayName'];
     $multiMessageBuilder = new MultiMessageBuilder();
 
-    //Follow Event Listener
+    // Handle　Follow Event
     if ($event instanceof FollowEvent) {
-        //Single Message
+        // Single Message
         $greetings = "Hello, $displayName!\n\nThanks for following us!";
         $bot->replyText($event->getReplyToken(), $greetings);
     }
 
-    //Message Event Listener
+    // Handle Message Event
     if ($event instanceof TextMessage) {
-        //User Message
+        // User Message
         $userMessage = $event->getText();
-        //Multiple Message
+        // Multiple Message
         $multiMessageBuilder->add(new TextMessageBuilder("Thanks for your message!\n\nYour message:\n$userMessage"));
         $multiMessageBuilder->add(new TextMessageBuilder('You may use the rich menu to interact with me!'));
         $bot->replyMessage($event->getReplyToken(), $multiMessageBuilder);
