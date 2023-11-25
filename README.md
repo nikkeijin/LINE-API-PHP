@@ -91,3 +91,7 @@ http_response_code(200);
 See the official API documentation for more information.
 
 [Getting Started](https://github.com/line/line-bot-sdk-php/wiki/Getting-started)
+
+### Useful Guides
+
+[Message Types](https://developers.line.biz/en/docs/messaging-api/message-types/)
