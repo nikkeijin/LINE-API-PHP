@@ -1,6 +1,7 @@
-# LINE Messaging API SDK for PHP
+# LINE BOT - PHP Starter
 
-The LINE Messaging API SDK to develop bots using LINE Messaging API.
+This is a simple PHP starter code for building LINE bots using the LINE Messaging API.        
+The code is designed to handle Follow Events and Text Message Events.
 
 ## Installation
 
@@ -23,7 +24,7 @@ composer require linecorp/line-bot-sdk:7.5.0
 composer remove linecorp/line-bot-sdk:$version
 ```
 
-## Simple code example
+## Starter Code
 
 ```php
 <?php
